@@ -48,12 +48,12 @@ def main():
         elif inputmenu == '4':
             hitung_total(belanjaan)
         elif inputmenu == '5':
-            print("Keluar dari program Toko kita. Terima kasih!")
+            print("See You! Thank you for shopping at Toko Kita.")
             break
         else:
             print("")
 
 if __name__ == "__main__":
-    print("\nSelamat datang di Toko kita!")
+    print("\nWelcome to Toko kita!")
     
     main()
