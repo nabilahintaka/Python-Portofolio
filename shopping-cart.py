@@ -1,43 +1,43 @@
 def tambah_barang(belanjaan):
-    nama_barang = input("Masukan nama item:  ")
+    nama_barang = input("Enter item name: ")
     try:
-        harga_barang = float(input("Masukan harga item:  "))
+        harga_barang = float(input("Enter price: "))
         belanjaan[nama_barang] = harga_barang
-        print(f"\nBarang {nama_barang} berhasil ditambahkan ke keranjang. dengan harga: Rp. {harga_barang:.2f}.")
+        print(f"\nItem {nama_barang} successfully added to cart. with price: Rp. {harga_barang:.2f}.")
     except ValueError:
-        print("\nError: Masukan harga harus berupa angka.")
+        print("\nError: Price input must be a number.")
 
 def hapus_barang(belanjaan):
-    nama_barang = input("Masukan nama item yang ingin dihapus:  ")
+    nama_barang = input("Enter the name of the item you want to delete:  ")
     if nama_barang in belanjaan:
         del belanjaan[nama_barang]
-        print(f"\nBarang {nama_barang} berhasil dihapus.")
+        print(f"\nItem {nama_barang}  has been successfully deleted from the shopping cart.")
     else:
-        print("\nError: Item yang anda cari tidak ditemukan.")
+        print("\nError: The item you are looking for was not found.")
 
 def lihat_barang(belanjaan):
     if not belanjaan:
-        print("\nBelanjaan anda masih kosong. Silahkan tambahkan item.  ")
+        print("\nYour cart is still empty. Please add items.  ")
     else:
-        print("\nBarang beralnaan anda:")
+        print("\nYour shopping items:")
         for nama_barang, harga_barang in belanjaan.items():
             print(f"- {nama_barang}: Rp. {harga_barang:.2f}")
 
 def hitung_total(belanjaan):
     total = sum(belanjaan.values())
-    print(f"\nTotal harga barang belanjaan anda: Rp. {total:.2f}")
+    print(f"\nTotal price of your shopping items: Rp. {total:.2f}")
 
 def main():
     belanjaan = {}
     while True:
         print("\nMenu:")
-        print("1. Menambah barang")
-        print("2. Hapus barang")
-        print("3. Tampilkan barang di keranjang")
-        print("4. Lihat total belanja")
+        print("1. Add Item")
+        print("2. Remove Item")
+        print("3. Show Item in Cart")
+        print("4. View Total Purchase")
         print("5. Exit")
         
-        inputmenu = input("Pilihan: ")
+        inputmenu = input("Options: ")
         
         if inputmenu == '1':
             tambah_barang(belanjaan)
