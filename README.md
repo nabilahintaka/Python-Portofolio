@@ -1,4 +1,4 @@
-# Python-Portofolio
+# Python Basic
 
 Welcome to my Data Analyst Portfolio! I am a data analyst with experience in using various tools and technologies. I am proficient in data tools such as Python, SQL, BigQuery, Excel, Power BI, Tableau and Looker Studio. 
 
@@ -35,8 +35,6 @@ If there is an error in inputting the menu or inputting the requested value, an 
 Data entered through menu number 1 is saved to the list or dictionary created and to delete items from the shopping cart, adjust the method of deleting items from the list or dictionary.
 
 4. Use `While Loop` and `Conditional If` so that the user can continue to interact with the program until the user selects the exit menu.
-
-5. Running the program `<student-name>_app.py` in `Anaconda Prompt` or `Terminal MacOS/Linux` and screenshot the running program and its results.
 
 **Example of interface program:**
 
